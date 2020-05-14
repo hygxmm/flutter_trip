@@ -50,6 +50,7 @@ class _TabNavigatorState extends State<TabNavigator> {
         currentIndex: currentIndex,
         items: tabs,
         onTap: (int index) {
+          _controller.jumpToPage(index);
           setState(() {
             currentIndex = index;
           });
