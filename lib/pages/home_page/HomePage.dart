@@ -43,6 +43,7 @@ class _HomePageState extends State<HomePage> {
                     scrollNotification.depth == 0) {
                   _onScroll(scrollNotification.metrics.pixels);
                 }
+                return null;
               },
               child: ListView(
                 children: <Widget>[
